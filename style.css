@@ -1,0 +1,106 @@
+body{
+    margin: 0;
+    padding: 0;
+    
+}
+
+.grid-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    gap: 0px 0px;
+    grid-template-areas:
+      "header_left header_left header_left header_middle header_middle header_middle header_right header_right header_right"
+      "container_left container_left container_left container_left container_right container_right container_right container_right container_right"
+      "footer_left footer_left footer_middle footer_middle footer_middle footer_middle footer_middle footer_right footer_right";
+  }
+  
+  div:nth-child(1) { grid-area: header_left; }
+
+  div:nth-child(2) { grid-area: header_middle;
+  
+}
+  
+  div:nth-child(3) { grid-area: header_right; }
+  
+  .footer_left { grid-area: footer_left; }
+  
+  .footer_middle { grid-area: footer_middle; }
+  
+  .footer_right { grid-area: footer_right; 
+}
+  
+  div:nth-child(7) { grid-area: container_left;
+    justify-content: center;
+    background-color: rgb(211, 211, 211);
+}
+  
+  div .container_right { grid-area: container_right;
+    background-color: rgb(211, 211, 211);
+    justify-content: center;
+    align-items: center;
+   }
+  
+  #instagram-font{
+      color: red;
+      font-family: 'Pacifico', cursive;
+      font-style: italic; 
+        text-align: center;
+  }
+div .header-icon{
+    width: 1.5vw;
+
+}
+  div .wrapper{
+	position: absolute;
+
+    transform: translate(-50%, -50%);
+    background: rgba(0, 0, 0,0.6);
+    max-width: 300px;
+    margin-top: 2rem;
+    margin-left: 11rem;
+    width: 100%;
+    padding: 2px;
+    display: flex;
+    justify-content: space-between;
+    border-radius: 2px;
+    cursor: pointer;
+}
+
+.wrapper, .input {
+    width: 85%;
+    padding: 15px 20px;
+    border: none;
+    border-radius: 5px;
+    font-weight: bold;
+}
+ 
+ul {
+    list-style: none outside none;
+}
+
+li {
+    position: relative;
+    display: inline;
+    margin: 20px;
+}
+
+div #hicoders-logo{
+    border: 1px solid #ddd;
+  border-radius: 50%;
+  padding: 5px;
+  width: 150px;
+  margin-left: 25rem ;
+  margin-top: 2rem;
+   }
+
+div .footer-icon{
+  margin-top: 10px;
+  transform: translate(-50%, -50%);
+  justify-content: center;
+  
+}
+
+div #profilbearbeiten{
+  margin-left: 1rem;
+}
